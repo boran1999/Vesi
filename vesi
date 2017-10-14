@@ -1,0 +1,144 @@
+#include <iostream>
+using namespace std;
+int main (void){
+setlocale(LC_ALL, "Russian");
+int a,b,a1,b1,a2,b2;
+cout<<"расположи a,b,c,d нa правую чашу;e,f,g,h на левую чашу весов"<< endl;
+cin>> a;
+cin>> b;
+ if (a==b){
+  cout<<"расположи a,b,c нa правую чашу; i,j,k на левую чашу весов"<<endl;
+  cin>>a1;
+  cin>>b1;
+    if (a1==b1) {
+     cout<<"ложная монета-l";
+     }
+    if (a1>b1){
+     cout<<"расположи i нa правую чашу;j на левую чашу весов"<<endl;
+     cin>>a2;
+     cin>>b2;
+       if (a2==b2){
+        cout<< "ложная монета-k";
+    }
+       if(a2>b2) {
+        cout<<"ложная монета-j"<<endl;
+        }
+       if (a2<b2){
+        cout<<"ложная монета-i"<<endl;
+        }
+   }
+   if (a1<b1){
+    cout<<"расположи i нa правую чашу;j на левую чашу весов"<<endl;
+    cin>>a2;
+    cin>>b2;
+       if (a2==b2){
+        cout<< "ложная монета-k";
+        }
+       if(a2>b2) {
+        cout<<"ложная монета-i"<<endl;
+        }
+       if (a2<b2){
+        cout<<"ложная монета-j"<<endl;
+        }
+   }
+ }
+ if (a>b){
+  cout<<"расположи a,e,f нa правую чашу;g,h,i на левую чашу весов"<<endl;
+  cin>>a1;
+  cin>>b1;
+   if(a1>b1){
+    cout<<"расположи g нa правую чашу;h на левую чашу весов"<<endl;
+    cin>>a2;
+    cin>>b2;
+      if(a2==b2){
+       cout<<"ложная монета-a" <<endl;
+       }
+      if(a2>b2){
+       cout<<"ложная монета-h" <<endl;
+       }
+      if(a2<b2){
+       cout<<"ложная монета-g" <<endl;
+       }
+   }
+   if (a1<b1){
+    cout<<"расположи e нa правую чашу;f на левую чашу весов"<<endl;
+    cin>>a2;
+    cin>>b2;
+     if(a2>b2){
+      cout<<"f-ложная монета"<<endl;
+      }
+     if(a2==b2){
+      cout<<"это невозможно"<<endl;
+     }
+     if(a2<b2){
+      cout<<"e-ложная монета"<<endl;
+      }
+   }
+   if (a1==b1){
+    cout<<"расположи b нa правую чашу;c на левую чашу весов"<<endl;
+    cin>>a2;
+    cin>>b2;
+     if(a2==b2){
+      cout<<"d-ложная монета"<<endl;
+      }
+     if(a2>b2){
+      cout<<"b-ложная монета"<<endl;
+      }
+     if(a2<b2){
+      cout<<"c-ложная монета"<<endl;
+      }
+   }
+ }
+ if (a<b){
+  cout<<"расположи c,d,i нa правую чашу;e,a,b на левую чашу весов"<<endl;
+  cin>>a1;
+  cin>>b1;
+   if(a1<b1){
+    cout<<"расположи c нa правую чашу;d на левую чашу весов"<<endl;
+    cin>>a2;
+    cin>>b2;
+     if(a2==b2){
+      cout<<"ложная монета-e"<< endl;
+      }
+     if(a2>b2){
+      cout<<"ложная монета-d" <<endl;
+      }
+     if(a2<b2){
+      cout<<"ложная монета-c" <<endl;
+     }
+
+   }
+   if (a1>b1){
+    cout<<"расположи a нa правую чашу;b на левую чашу весов"<<endl;
+    cin>>a2;
+    cin>>b2;
+     if(a2>b2){
+      cout<<"b-ложная монета"<<endl;
+      }
+     if(a2==b2){
+      cout<<"это невозможно"<<endl;
+     }
+     if(a2<b2){
+      cout<<"a-ложная монета"<<endl;
+     }
+   }
+   if (a1==b1){
+    cout<<"расположи f нa правую чашу;g на левую чашу весов"<<endl;
+    cin>>a2;
+    cin>>b2;
+     if(a2==b2){
+      cout<<"h-ложная монета"<<endl;
+      }
+     if(a2>b2){
+      cout<<"f-ложная монета"<<endl;
+      }
+
+     if(a2<b2){
+      cout<<"g-ложная монета"<<endl;
+      }
+   }
+ }
+//system("pause");
+return 0;
+
+}
